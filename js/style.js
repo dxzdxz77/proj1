@@ -1,10 +1,35 @@
 $(function(){
     var slide_box;
     slide_box = setInterval(function(){
-        $('#arti .alarm > li:nth-child(1)').animate({
+        $('#arti .alarm li:nth-child(1)').animate({
             'margin-top':'-2em'},600,function(){
-                $('#arti .alarm').append($('#arti .alarm > li:nth-child(1)'));
-                $('.#arti .alarm > li:nth-child(4)').css({'margin-top':'-2em'});//first-child,last-child 도 가능함
+                $('#arti .alarm ul').append($('#arti .alarm li:nth-child(1)'));
+                $('#arti .alarm li:last-child').css({'margin-top':'0'});
             });
     },2000);
-})
+
+    var slide_box;
+    slide_box = setInterval(function(){
+        $('#arti .search li:nth-child(1)').animate({
+            'margin-top':'-2em'},600,function(){
+                $('#arti .search ul').append($('#arti .search li:nth-child(1)'));
+                $('#arti .search li:last-child').css({'margin-top':'0'});
+            });
+    },2000);
+
+      $(window).scroll(function(){
+          if($(document).scrollTop() >= 1200 && $(document).scrollTop() <= $('#footer').offset().top - 800){
+              $('#quickmenu').fadeIn(200)
+          }else {$('#quickmenu').fadeOut(200)}
+      })//scroll
+
+      $('#header .all_nav').click(function(){
+          $('#nav_pop').fadeIn();
+      })
+
+     $('#nav_pop .nav_close').click(function(){
+         $('#nav_pop').fadeOut();
+     })   
+
+})//jq end
+
