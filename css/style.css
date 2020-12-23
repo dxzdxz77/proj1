@@ -1,0 +1,330 @@
+/*********************팝업****************************/
+#top_popup{
+    position: relative;
+}
+#top_popup img{
+    width: 100%;
+}
+#top_popup .close{
+    position: absolute;
+    right:100px;
+    top: 5px;
+    right: 23px;
+    text-indent: -99999px;
+    background:none;
+    border: 0;
+    cursor: pointer;
+}
+#top_popup .close:before{
+    content:'';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color:#BA7F28;
+    transform:rotate(45deg);
+    position: absolute;
+    top: 0px;
+}
+#top_popup .close:after{
+    content:'';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color:#BA7F28;
+    transform:rotate(-45deg);
+    position: absolute;
+    top: 0px; 
+}
+/***quick*****************************/
+#quickmenu{
+    width: 70px;
+    position: fixed;
+    top:100px;
+    right: 0px;
+    z-index: 99999999;    
+}
+#quickmenu ul{
+    border-top: 5px solid #BA7F28;
+    border-bottom: 5px solid #BA7F28;
+    background-color: #fff;
+    /*border: 3px solid #BA7F28;*/
+}
+#quickmenu li{
+    margin: 5px;
+    text-align: center;
+}
+#quickmenu li span{
+    font-size: 0.5rem;
+}
+#quickmenu li:last-child{
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #42290F;
+    margin: 0;
+    padding: 5px 0;
+}
+#quickmenu li img{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+/********************section1*********************************/
+#sec1 img{
+    width: 100%;
+}
+
+/************************article******************************/
+#arti .inner{
+    position: relative;
+}
+#arti ul.alarm{
+    display: block;
+    background-color: rgb(0,0,0,0.5);
+    width: 502px;
+    height: 73px;
+    position: absolute;
+    top: -77px;
+    left: 0;
+    overflow: hidden;
+}
+#arti ul.alarm li{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: 2em;
+
+}
+#arti ul.alarm li.alarm_font{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+#arti ul.search{
+    display: block;
+    background-color: rgb(0,0,0,0.5);
+    width: 502px;
+    height: 73px;
+    position: absolute;
+    top:-77px;
+    right: 0;
+    overflow: hidden;
+}
+#arti ul.search li{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: 2em;
+
+}
+#arti ul.search li.search_font{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+/********************section2*********************************/
+#sec2 .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sec2 h2{
+    color: #C2923A;
+    margin: 70px 0 30px 0;
+}
+#sec2 h2 span{
+    font-size: 0.9rem;
+    margin-left: 35px;
+    font-weight: 500;
+    color:#6f6f6f;
+}
+#sec2 li{
+    float: left;
+    width: calc((100% - 70px)/3);
+    height: 403px;
+    background-color: rgb(238, 238, 238);
+    margin-right: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#sec2 li:nth-child(3n){
+    margin-right: 0;
+}
+#sec2 img{
+    margin-top: 30px;
+}
+#sec2 .clinic_txt{
+    font-weight: bold;
+    color: #42290F;
+    margin-top: 55px;
+    background-color: #DFC39B;
+    padding: 50px 0;
+}
+
+/**********************sec3**************************/
+#sec3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sec3 h2{
+    color: #C2923A;
+    margin: 110px 0 30px 0;
+}
+#sec3 h2 span{
+    font-size: 0.9rem;
+    margin-left: 35px;
+    font-weight: 500;
+    color:#6f6f6f;
+
+}
+#sec3 .introduce .one{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 33.5%;
+    margin-right: 35px;   
+    height: 320px;
+    overflow: hidden;
+
+}
+#sec3 .introduce .one img{
+    position: relative;
+    width: 400px;
+    left: calc(50% - 200px);
+}
+
+#sec3 .introduce .two{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: calc(66.5% - 35px);    
+    height: 320px;
+    overflow: hidden;
+}
+#sec3 .introduce .two img{
+    position: relative;
+    width: 830px;
+    left: calc(50% - 415px);
+}
+
+/**********************sec4**************************/
+#sec4::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sec4 h2{
+    color: #C2923A;
+    margin-top: 220px;
+    margin-bottom: 10px;
+}
+#sec4 h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color:#6f6f6f;
+    margin-bottom: 60px;
+
+}
+#sec4 h2,#sec4 h3{
+    display: block;
+}
+#sec4 .sec4_title{
+    width: 400px;
+    float: left;
+    margin-right: 35px;
+    margin-top: 110px;
+}
+#sec4 .sec4_title img{
+    width: 100%;
+}
+#sec4 .sec4_cont{
+    width:calc(100% - 435px);
+    float: left;
+}
+
+/**********************sec5**************************/
+#sec5 h2{
+    color: #C2923A;
+    margin: 110px 0 30px 0;
+}
+#sec5 img{
+    width: 100%;
+}
+#sec5 h3{
+    font-size: 0.9rem;
+    margin-left: 35px;
+    font-weight: 500;
+}
+/*************************물어볼것***************************/
+#sec5 .youtube{
+    position: relative;
+} 
+/***************************물어볼것***********************************/
+#sec5 .y_but{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+}
+#sec5 .y_but img{
+    width: 20%;
+}
+/**********************sec6**************************/
+#sec6{
+    margin-bottom: 110px;
+}
+#sec6 .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#sec6 h2{
+    color: #C2923A;
+    margin: 110px 0 30px 0;
+}
+/******************/
+#sec6 h2 span{
+    font-size: 0.9rem;
+    margin-left: 35px;
+    font-weight: 500;
+    color:#6f6f6f;
+}
+#sec6 ul a{
+    display: block;  
+}
+#sec6 ul{
+    float: left;
+
+}
+#sec6 ul li{
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: calc((100% - 20px)/3);
+    margin-right: 10px;
+    height: 423px;
+    background-color: #eee;    
+}
+#sec6 ul li:last-child{
+    margin-right: 0;
+}
+#sec6 ul li img{
+    width: 100%;
+}
+#sec6 ul li .f_size{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 30px 20px 0 20px;
+    color: #555
+}
+#sec6 ul li .f_size_t{
+    font-size: 0.8rem;
+    margin: 10px 20px 0 20px;
+
+}
+#sec6 span.more{
+    font-size: 0.8rem;
+    float: right;
+    margin-right: 20px;
+}

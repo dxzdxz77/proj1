@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@import url(https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+
+* {margin:0; padding:0;}
+
+html{
+      font-size: 16px;
+}
+body{
+      font-size:16px;
+      color:#6f6f6f;
+      font-family: 'Nanum Gothic', sans-serif
+}
+ul, ol, li{
+      list-style-type:none;
+}
+img, fieldset{
+      border: none;
+      vertical-align: middle}
+hr {
+      clear: both;
+      border: none;
+}/*:after{clear:both;}*/
+a {
+      color: inherit;
+      text-decoration: none;
+      outline: 0;
+}
+table{
+      border-collapse:collapse
+}
+input, textarea, input::placeholder, input::placeholder {
+      color: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      vertical-align: middle;
+      outline: 0;
+}
+button{
+      outline:0;
+}
+
+.sound_only{
+      display: block;
+      text-indent: -999999999999px;
+      height: 0;
+}
+
+/*************메인화면, 서브화면 공통영역******************************************************/
+
+#wrap{
+      width: 100%;
+      min-width: 1024px;
+      overflow: hidden;
+}
+.inner{
+      min-width:1024px;
+      max-width:1280px;
+      margin:0 auto;
+}
+
+
+
+/*header*/      
+#header #logo{
+      float:left;
+      width: 80px;
+}
+#header #logo a{
+      display: block;
+      width: 100%;
+      height: 75px;
+      background: url(../images/logo.png) no-repeat center;
+      background-size: 100%;
+}
+#header #logo img{
+      width: 100%;
+}
+#header #nav4{
+      float:right;
+      width:825px;
+}
+
+ #header .top_icon{
+      float:right;
+      width:216px;
+      /*background-color:#ccc;*/
+}
+#header .top_icon p{
+      display: inline-block;
+}
+
+#header .top_icon span{
+      margin-bottom: 5px;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #BA7F28;
+}
+#header .all_nav{
+      transform: translate(0,21px);
+}
+#header .top_icon .icon_size{
+      margin-left: 20px;
+}
+#header .top_icon .icon_size img{
+      width: 24px;
+      margin-top: 25px;
+      margin-bottom: 5px;
+}
+
+  /*nav*/
+  #nav{
+        float: right;
+  }
+  #header .inner{
+        position: relative;
+}  
+  #nav .depth1 {
+        float:left;
+}
+
+  #nav .depth1 > li {
+        float:left;
+        padding:0 20px;
+}
+  #nav .depth1 > li > a {
+      display: block;
+      text-align: center;
+      font-size:0.9rem;
+      color:#333;
+      font-weight: bold;
+      line-height:75px;
+}
+  #nav .depth1 > li > a:after {
+        content: '';
+        height: 3px; 
+        background-color:#BA7F28;
+        position: relative;
+        width:0;
+        display: block;
+        transition: 0.5s;}
+  #nav .depth1 > li:hover > a:after{
+        width:100%
+}
+
+  #nav .depth1{
+        position: static;
+} 
+    
+  #nav .nav_box {
+        position:absolute;
+        /*top:calc(2.8rem + 25px);*/
+        top:78px;
+        left:0;
+        width:100%;
+        background-color:rgba(0,0,0,0.5);
+        z-index:96;
+        display: none;
+        padding:10px 0;
+        color:#fff;
+}
+
+  #nav .depth1>li:hover .nav_box{
+        display: block;
+}               
+  #nav .nav_box .depth2{
+        width:100%;
+        margin:0 auto;
+        position: relative;
+        padding-left: 100px;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+        text-align: center;
+}
+  #nav .nav_box .depth2:after{
+        content: '';
+        display: block;
+        clear: both;
+}
+  #nav .depth2 > li{
+        display: inline-block;
+        box-sizing: border-box;
+        padding:10px;
+}
+ 
+ #nav .depth2 > li:after{
+       content:'';
+       display: inline-block;
+       width:5px;
+       height:5px;
+       background-color: #fff;
+       border-radius: 50%;
+       margin-left:20px;
+       transform:translate(0,-3px);
+      }
+#nav .depth2 > li:last-child:after{
+      display: none;
+}
+
+
+/*************************************************************/
+/*footer*/
+#footer{
+      background-color: #aaa;
+      color: #fff;
+      font-size: 0.8rem;
+      padding-bottom: 20px;
+}
+#footer .inner{
+      position: relative;
+}
+#footer .inner::after{
+      content: '';
+      display:block;
+      clear:both;
+}
+#footer .footer_logo{
+      width: 61px;
+      display: inline-block;
+      box-sizing: border-box;
+      margin-top: 20px;
+}
+#footer .footer_logo img{
+      width: 100%;
+}
+#footer .f_logo_t{     
+      display: inline-block;
+      margin-left: 10px;
+      transform: translate(0,-3px);
+}
+
+#footer ul.footer_txt{
+      margin: 10px 0;
+}
+#footer ul.footer_txt>li{
+      display: inline-block;
+      box-sizing: border-box;
+      border-right: 1px solid #fff;
+      margin: 3px;
+      padding-right: 10px;
+}
+#footer ul.footer_txt>li:first-child{
+      font-weight: bold;
+      color:#BA7F28;
+}
+#footer ul.footer_txt>li:last-child{
+      border: none;
+}
+#footer p{
+      line-height: 1.3em;
+}
+#footer ul.footer_call{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      float: right;
+}
+#footer ul.footer_call>li{
+      float:left;
+}
+#footer ul.footer_call>li.call{
+      font-size: 2rem;
+      font-weight: bold;
+}
+#footer ul.footer_call>li.call_p{
+      margin-top: 20px;
+      margin-right: 5px;
+}

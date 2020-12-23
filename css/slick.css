@@ -1,0 +1,221 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/****************************BSA************************************/
+#sec1{
+    clear: both;
+}
+#sec1 .slick-arrow{
+    position: absolute;
+    top: calc(50% - 40px);
+    z-index:9999;
+    background-color: transparent;
+    text-indent: -9999999999px;
+    width: 40px;
+    height: 80px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+/***********************************/
+#sec1 .slick-prev{
+    left: 100px;
+    background: url(../images/s_previous.png);
+    background-size: 100%;
+}
+#sec1 .slick-next{
+    right: 100px;
+    background: url(../images/s_next_r.png);
+    background-size: 100%;
+}
+
+#sec1 .slick-dots{
+    position: absolute;
+    /*******************/width: 100%;/****원중앙으로보내기****/
+    /**************/text-align: center;/******원중앙으로보내기************/
+    bottom: 50px;
+}
+#sec1 .slick-dots li{
+    display: inline-block;
+    margin-right: 5px;
+}
+#sec1 .slick-dots li button{
+    text-indent:-9999999999999px;
+    display:block;
+    border-radius:50%;
+    width: 15px;
+    height: 15px;
+    background-color:#fff;
+    text-indent: -999999999px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+ #sec1 .slick-dots li.slick-active button{
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: #ccc
+ }
+
+
+ /*************************/
+#sec4 .regular{
+    width:1100px;
+}
+#sec4 img{
+    width: 355px;
+}
+#sec4 .slick-prev{
+    left: 0px;
+    background: url(../images/bf_previous.png);
+    background-size: 30%;
+}
+#sec4 .slick-next{
+    left: 30px;
+    background: url(../images/bf_next_r.png);
+    background-size: 30%;
+}
+#sec4{
+    clear: both;
+}
+#sec4 .slick-arrow{
+    position: absolute;
+    top: -35px;
+    z-index:9999;
+    background-color: transparent;
+    text-indent: -9999999999px;
+    width: 40px;
+    height: 80px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+/*****비포에프터스판글자******/
+#sec4 p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#sec4 span{
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
