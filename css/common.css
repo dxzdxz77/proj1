@@ -195,8 +195,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42290f', end
       float: left;
       margin-bottom: 100px;
       color: #fff;
-      
-
+      padding-left: 50px;
+      box-sizing: border-box;
+      height: 256px;
+}
+#nav_pop .depth1 > li:nth-child(1),#nav_pop .depth1 > li:nth-child(5){
+      padding-left: 0;
 }
 #nav_pop .depth1 > li::after{ 
       border-right: 1px solid #fff;
@@ -226,9 +230,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42290f', end
       font-weight: bold;
 }
 #nav_pop .depth1 ul{
-
       box-sizing: border-box;
-      padding-left: 5px;
 }
 
 #nav_pop .depth2 > li{
@@ -237,13 +239,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42290f', end
       font-size: 0.9rem;
       
 }
-#nav_pop p{
-      display: block;
-      width: 100%;
-      height: 50px;
-      background-color: #C2923A;
-}
-
 
   /*nav*/
   #nav{
