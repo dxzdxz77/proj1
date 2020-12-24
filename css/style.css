@@ -265,10 +265,15 @@
     overflow: hidden;
 
 }
+/**********중요**이미지커지게하기********/
 #sec3 .introduce .one img{
     position: relative;
     width: 400px;
     left: calc(50% - 200px);
+    transition: 1s;
+}
+#sec3 .introduce .one img:hover{
+    transform: scale(1.1);
 }
 
 #sec3 .introduce .two{
@@ -283,8 +288,11 @@
     position: relative;
     width: 830px;
     left: calc(50% - 415px);
+    transition: 2s;
 }
-
+#sec3 .introduce .two img:hover{
+    transform: scale(1.1);
+}
 /**********************sec4**************************/
 #sec4{
     margin-bottom: 110px;
@@ -375,7 +383,11 @@
     width: calc((100% - 20px)/3);
     margin-right: 10px;
     height: 423px;
-    background-color: #eee;    
+    background-color: #eee; 
+    transition: 0.5s;   
+}
+#sec6 ul li:hover{
+    transform: scale(1.1);
 }
 #sec6 ul li:last-child{
     margin-right: 0;
