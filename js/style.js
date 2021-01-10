@@ -34,5 +34,10 @@ $(function(){
      $('#top_popup .close').click(function(){
          $('#top_popup').slideUp();
      })
+
+     $('#key_popup .close').click(function(){
+        $('#key_popup').css({display:'none'});
+    })//공지 팝업창 닫기
+    
 })//jq end
 

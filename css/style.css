@@ -1,3 +1,36 @@
+/****************공지*********************/
+#key_popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;    
+    z-index: 99999999999999999999999999;
+    background-color: rgb(0,0,0,0.5);/*배경색 투명하게 깔기*/
+}
+#key_popup > div{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2em;
+    text-align: center;
+    border: 3px solid #132F53;
+    border-radius: 10%;
+    padding: 80px 30px;
+    left: calc(50% - 469px);
+    top: 200px;
+    background-color: #fff;
+}
+#key_popup .close{
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    /*background: url(../images/btn_popclose.gif) no-repeat;*/
+    background-position: right top;
+    border: none;
+    cursor: pointer;
+}
 /*********************팝업****************************/
 #top_popup{
     position: relative;
