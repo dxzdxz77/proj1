@@ -29,7 +29,10 @@ $(function(){
 
      $('#nav_pop .nav_close').click(function(){
          $('#nav_pop').fadeOut();
-     })   
-
+     })
+     
+     $('#top_popup .close').click(function(){
+         $('#top_popup').slideUp();
+     })
 })//jq end
 
