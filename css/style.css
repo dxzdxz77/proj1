@@ -13,10 +13,10 @@
     font-weight: bold;
     line-height: 2em;
     text-align: center;
-    border: 3px solid #132F53;
+    border: 3px solid #BA7F28;
     border-radius: 10%;
     padding: 80px 30px;
-    left: calc(50% - 469px);
+    left: calc(50% - 347px);
     top: 200px;
     background-color: #fff;
 }
@@ -26,10 +26,31 @@
     right: -30px;
     width: 20px;
     height: 20px;
-    /*background: url(../images/btn_popclose.gif) no-repeat;*/
     background-position: right top;
     border: none;
     cursor: pointer;
+    background: transparent;
+}
+#key_popup .close::before{
+    width: 2px;
+    height: 30px;
+    display: block;
+    content: '';
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+#key_popup .close::after{
+    position: absolute;
+    top:0;
+    width: 2px;
+    height: 30px;
+    display: block;
+    content: '';
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+#key_popup .big{
+    color: #BA7F28;
 }
 /*********************팝업****************************/
 #top_popup{
